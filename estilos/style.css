@@ -220,7 +220,34 @@ justify-items: center;
 
   }
 
- 
+  .mimundo{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#acercademi{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, rgb(245, 156, 230) , rgb(169, 235, 247));
+    border: 0,5px solid black;
+}
+
+#holamundo{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#acercademi:hover{
+  transform: scale(1.4);
+  transition-property: all;
+  transition-duration: 2s;
+}
+
   
 
 
