@@ -111,6 +111,11 @@ align-items: end;
 justify-items: center;
 }
 
+.puntasbloch{
+    display: flex;
+    margin-top: 40px;
+}
+
 .bailarina{
     border: 2px solid black;
 }
@@ -221,11 +226,10 @@ justify-items: center;
   }
 
   .mimundo{
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 #acercademi{
     font-size: 30px;
@@ -249,8 +253,26 @@ justify-items: center;
 }
 
   
+.leotard0:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1.5s;
+}
 
 
+.yomisma{
+    width: 400px;
+    height: 600px;
+    margin-left: 200px;
+}
 
+.formulario{
+    margin: 40px 50px 40px 50px; 
+}
 
-
+.tituloproducciones{
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    justify-items: center;
+}
