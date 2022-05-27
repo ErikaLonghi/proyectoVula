@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffe1e6;
+}
+
+h1 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  color: #bd7999;
+}
+
+h2 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  color: #8a5e6f;
+}
+
+figcaption {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+#combinandoOutfits {
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+.ideas {
+  color: #d859c3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#subtitulo {
+  color: #696666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 0.5cm;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.5cm;
+}
+
+footer {
+  margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #6b6b6b;
+  background-color: #ffe1e6;
+}
+
+.main-head {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.contenido {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: contenido;
+}
+
+.nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+}
+
+.galeria {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: galeria;
+}
+
+.footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.fotos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  height: 1800px;
+  gap: 15px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-items: center;
+}
+
+.puntasbloch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.bailarina {
+  border: 2px solid black;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+      grid-template-areas: "header" "nav" "contenido" "galeria" "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header" "nav nav" "contenido contenido" "galeria galeria" "footer footer";
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  iframe {
+    margin-left: 150px;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "header header header" "nav contenido ." "nav contenido ." "galeria galeria galeria" "footer footer footer";
+  }
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  iframe {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 920px) {
+  .fotos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: auto;
+    gap: 15px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    justify-items: center;
+  }
+  .wrapper {
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "header header header" "nav contenido ." "nav contenido ." "galeria galeria galeria"  "footer footer footer";
+  }
+  img {
+    border: 5px solid #f8e8f5;
+    margin-top: 20px;
+  }
+  .fotografias {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: #c5c588;
+  }
+  iframe {
+    margin-left: 200px;
+  }
+}
+
+.mimundo {
+  margin-top: 25px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-right: 150px;
+}
+
+#acercademi {
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  margin-bottom: 40px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f59ce6), to(#a9ebf7));
+  background-image: linear-gradient(to right, #f59ce6, #a9ebf7);
+  border: 0,5px solid black;
+}
+
+#holamundo {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#acercademi:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.leotard0:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.yomisma {
+  width: 400px;
+  height: 600px;
+  margin-left: 200px;
+}
+
+.formulario {
+  margin: 40px 50px 40px 50px;
+}
+
+.tituloproducciones {
+  color: palevioletred;
+  font-family: 'Times New Roman', Times, serif;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.iconowpp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  line-height: 63px;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 35px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.iconowpp:hover {
+  background: #40e656;
+}
+/*# sourceMappingURL=style2.css.map */
