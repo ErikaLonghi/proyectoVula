@@ -15,6 +15,38 @@ header nav ul li a {
   margin: 0.5cm;
 }
 
+.btn-facebook, .btn-instagram {
+  background-color: #205ee4;
+}
+
+.btn-instagram {
+  background-color: #f3286c;
+}
+
+.btn-twitter {
+  background-color: #69ddf1;
+}
+
+.mail, .btn-facebook, .btn-instagram, .btn-twitter {
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #302f2f;
+}
+
+.btn-facebook, .btn-instagram {
+  color: black;
+}
+
+.btn-twitter {
+  color: black;
+}
+
+.shadow {
+  height: 70px;
+  width: 400px;
+  border: dotted #e3aaf1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -103,12 +135,6 @@ footer {
   grid-area: nav;
 }
 
-.galeria {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: galeria;
-}
-
 .footer {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -122,7 +148,7 @@ footer {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  height: 1800px;
+  height: auto;
   gap: 15px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -194,11 +220,13 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
     height: auto;
     gap: 15px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
     justify-items: center;
   }
   .wrapper {

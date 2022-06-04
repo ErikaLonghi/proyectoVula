@@ -1,0 +1,40 @@
+$redes:(
+    facebook: #205ee4,
+    instagram: #f3286c,
+    twitter: #69ddf1,
+);
+@each $red, $color in $redes{
+    .btn-#{$red}{
+        background-color: $color;
+    }
+
+};
+
+.mail{
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(48, 47, 47);
+}
+
+.btn-facebook{
+    @extend.mail;
+    color: black;
+}
+.btn-instagram{
+    @extend.btn-facebook;
+}
+.btn-twitter{
+    @extend.mail;
+    color: black;
+}
+
+@mixin caja ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.shadow{
+    @include caja (400px, 70px);
+    border: dotted rgb(227, 170, 241);
+    
+}

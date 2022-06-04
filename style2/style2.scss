@@ -1,6 +1,6 @@
 @import "generales";
 @import "variables";
-
+@import "sass2";
 
 
 *{
@@ -72,22 +72,23 @@ footer{
 .nav{
     grid-area: nav;
 }
-.galeria{
-    grid-area: galeria;
-}
 .footer{
     grid-area: footer;
 }
 
-.fotos{
-display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: 1fr;
-height: 1800px;
-gap: 15px;
-align-items: end;
-justify-items: center;
-}
+
+
+.fotos{   
+
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    gap: 15px;
+    align-items: end;
+    justify-items: center;
+    }
 
 .puntasbloch{
     display: flex;
@@ -166,9 +167,10 @@ justify-items: center;
     
       display: grid;
       grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
       height: auto;
       gap: 15px;
-      align-items: start;
+      align-items: end;
       justify-items: center;
 
 
