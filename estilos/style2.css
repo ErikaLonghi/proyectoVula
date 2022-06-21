@@ -1,18 +1,29 @@
 header {
   background-color: #ffe1e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 header nav ul li {
-  list-style-type: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header nav ul li a {
+header a {
   text-decoration: none;
   color: #6b6b6b;
-  font-size: 0.5cm;
+  font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0.5cm;
+  margin: 3vh;
 }
 
 .btn-facebook, .btn-instagram {
@@ -89,7 +100,7 @@ figcaption {
 }
 
 #combinandoOutfits {
-  margin-left: 200px;
+  margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
   color: #ee84dc;
@@ -98,11 +109,10 @@ figcaption {
 
 .ideas {
   color: #d859c3;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 160px;
 }
 
 #subtitulo {
@@ -117,7 +127,7 @@ footer {
   background-color: #ffe1e6;
 }
 
-.main-head {
+.header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
@@ -160,7 +170,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 40px;
+  margin-top: 30px;
+  height: 90%;
+  width: 60%;
 }
 
 .bailarina {
@@ -184,13 +196,13 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   iframe {
     margin-left: 150px;
@@ -331,5 +343,88 @@ p {
   z-index: 100;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+}
+
+button {
+  margin: 2%;
+}
+
+.custom-btn {
+  width: 150px;
+  height: 35px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-11 {
+  border: none;
+  background: #ff2d7d;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff5697), to(#ff0f6b));
+  background: linear-gradient(0deg, #ff5697 0%, #ff0f6b 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.btn-11:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-11:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fafafa;
+  -webkit-animation: shiny-btn1 3s ease-in-out infinite;
+          animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+  opacity: .7;
+}
+
+.btn-11:active {
+  -webkit-box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3), -4px -4px 6px 0 rgba(116, 125, 136, 0.2), inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.logo {
+  width: 2%;
+  height: 6%;
 }
 /*# sourceMappingURL=style2.css.map */
