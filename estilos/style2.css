@@ -7,9 +7,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 header nav ul li {
@@ -21,9 +21,7 @@ header nav ul li {
 header a {
   text-decoration: none;
   color: #6b6b6b;
-  font-size: 3vh;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 3vh;
 }
 
 .btn-facebook, .btn-instagram {
@@ -59,7 +57,7 @@ header a {
 }
 
 * {
-  padding: 0;
+  padding: 5550;
   margin: 0;
 }
 
@@ -100,7 +98,6 @@ figcaption {
 }
 
 #combinandoOutfits {
-  margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 20px;
   color: #ee84dc;
@@ -112,7 +109,10 @@ figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 160px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
 }
 
 #subtitulo {
@@ -125,12 +125,22 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #6b6b6b;
   background-color: #ffe1e6;
+  padding: 0 0 30px 30px;
+}
+
+.nav {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contenido {
@@ -142,7 +152,14 @@ footer {
 .nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: nav;
+}
+
+.nav li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -183,29 +200,26 @@ footer {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-      grid-template-areas: "header" "nav" "contenido" "galeria" "footer";
+      grid-template-areas: "header header header" "nav nav nav " "contenido" "galeria" "footer";
 }
 
 @media (min-width: 500px) {
   .wrapper {
-    -ms-grid-columns: 1fr 3fr;
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: "header header" "nav nav" "contenido contenido" "galeria galeria" "footer footer";
+    -ms-grid-columns: 1fr 4fr 1fr;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: "header header header" "nav nav nav" "galeria galeria galeria" "footer footer footer";
   }
   nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-  }
-  iframe {
-    margin-left: 150px;
   }
 }
 
@@ -240,6 +254,7 @@ footer {
         -ms-flex-align: end;
             align-items: end;
     justify-items: center;
+    margin-top: 3vw;
   }
   .wrapper {
     -ms-grid-columns: 1fr 4fr 1fr;
@@ -248,7 +263,6 @@ footer {
   }
   img {
     border: 5px solid #f8e8f5;
-    margin-top: 20px;
   }
   .fotografias {
     display: -ms-grid;
@@ -257,9 +271,6 @@ footer {
         grid-template-columns: 1fr 1fr;
     justify-items: center;
     background-color: #c5c588;
-  }
-  iframe {
-    margin-left: 200px;
   }
 }
 
@@ -311,7 +322,7 @@ p {
 .yomisma {
   width: 400px;
   height: 600px;
-  margin-left: 200px;
+  margin-left: 15%;
 }
 
 .formulario {
@@ -350,13 +361,13 @@ button {
 }
 
 .custom-btn {
-  width: 150px;
+  width: 6rem;
   height: 35px;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
-  font-weight: 500;
+  font-weight: 20px;
   background: transparent;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -366,6 +377,7 @@ button {
   -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
           box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
+  font-size: 11px;
 }
 
 .btn-11 {
@@ -423,8 +435,9 @@ button {
   }
 }
 
-.logo {
-  width: 2%;
-  height: 6%;
+#ppp {
+  width: 10vw;
+  margin-left: 0px;
+  margin-top: 0px !important;
 }
 /*# sourceMappingURL=style2.css.map */

@@ -2,7 +2,7 @@ header{
     background-color: rgb(255, 225, 230);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
 
     nav ul li{
 
@@ -11,14 +11,11 @@ header{
         a{
             text-decoration: none;
             color: rgb(107, 107, 107);
-            font-size: 3vh;
             font-family: Arial, Helvetica, sans-serif;
-            margin: 3vh;
             
         }
     
     }
-
 
 
 

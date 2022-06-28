@@ -4,7 +4,7 @@
 
 
 *{
-    padding: 0;
+    padding: 5550;
     margin:  0;
 }
 
@@ -39,7 +39,6 @@ margin-bottom: 30px;
 }
 
 #combinandoOutfits{
-    margin-left: 100px;
     margin-top: 30px;
     margin-bottom: 20px;
     color:$letra;
@@ -49,7 +48,9 @@ margin-bottom: 30px;
 .ideas{
     color: rgb(216, 89, 195);
     display: flex;
-    margin-left: 160px;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align:center;
     }
 
 
@@ -63,12 +64,16 @@ footer{
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: rgb(107, 107, 107);
-    background-color: rgb(255, 225, 230)
+    background-color: rgb(255, 225, 230);
+    padding: 0 0 30px 30px;
     
 }   
-
+.nav{
+    justify-content: space-around;
+}
 .header{
     grid-area: header;
+    justify-content: flex-start;
 }
 .contenido{
     grid-area: contenido;
@@ -76,6 +81,10 @@ footer{
 .nav{
     grid-area: nav;
 }
+.nav li{
+    align-items: center;
+}
+
 .footer{
     grid-area: footer;
 }
@@ -107,8 +116,8 @@ footer{
     display: grid;
     gap: 20px;
     grid-template-areas: 
-    "header"
-    "nav"
+    "header header header"
+    "nav nav nav "
     "contenido"
     "galeria"
     "footer";
@@ -117,27 +126,22 @@ footer{
 
 @media (min-width:500px){
     .wrapper{
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas: 
-      "header header"
-      "nav nav"
-      "contenido contenido"
-      "galeria galeria"
-      "footer footer"
+      "header header header"
+      "nav nav nav"
+      "galeria galeria galeria"
+      "footer footer footer";
      
     }
   
     nav ul{
       display: flex;
-      justify-content: center;
+      justify-content: left;
       flex-direction: row;
       
     }
-    
 
-    iframe{
-        margin-left: 150px;
-    }
 
    
   
@@ -179,11 +183,12 @@ footer{
       gap: 15px;
       align-items: end;
       justify-items: center;
+      margin-top: 3vw;
 
     }
     .wrapper{
       grid-template-columns: 1fr 4fr 1fr;
-      grid-template-areas:
+      grid-template-areas: 
       "header header header"
       "nav contenido ."
       "nav contenido ."
@@ -193,7 +198,6 @@ footer{
   
     img{
      border: 5px solid  rgb(248, 232, 245);
-      margin-top: 20px;
     }
     .fotografias{
         display: grid;
@@ -204,19 +208,16 @@ footer{
 
     }
 
-    iframe{
-        margin-left: 200px;
-    }
-
-
-
   }
  
+
   p{
       color:$parrafo;
   }
 
-  .mimundo{
+
+
+    .mimundo{
     margin-top: 25px;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -255,7 +256,7 @@ footer{
 .yomisma{
     width: 400px;
     height: 600px;
-    margin-left: 200px;
+    margin-left: 15%;
 }
 
 .formulario{
@@ -290,13 +291,13 @@ footer{
         margin: 2%;
       }
       .custom-btn {
-        width: 150px;
+        width: 6rem;
         height: 35px;
         color: #fff;
         border-radius: 5px;
         padding: 10px 25px;
         font-family: 'Lato', sans-serif;
-        font-weight: 500;
+        font-weight: 20px;
         background: transparent;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -306,6 +307,7 @@ footer{
          7px 7px 20px 0px rgba(0,0,0,.1),
          4px 4px 5px 0px rgba(0,0,0,.1);
         outline: none;
+        font-size: 11px;
       }
 
       
@@ -348,10 +350,8 @@ footer{
         100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
     }
 
-
-    .logo{
-
-        width: 2%;
-        height: 6%;
-    }
-
+#ppp{
+    width: 10vw;
+    margin-left: 0px;
+    margin-top: 0px !important;
+}
